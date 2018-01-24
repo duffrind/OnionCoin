@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <title>OnionCoin</title>
-    <script src="./onion.js"></script>
   </head>
   <body>
    How much OnionCoin do you want to buy?
    <br>
-   <form>
-     <input id="">
-   </form>
+   Number of OnionCoin:
+   <input id="coinAmount" type="number" step=0.01 name="onions" value="0" min="0"></input>
+   <br>
+   Cost:
+   <input id="price" type="number" step=0.01 name="dollars" value=0 disabled></input>
+   <script src="./onion.js"></script>
   </body>
 </html>
-
