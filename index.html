@@ -12,26 +12,22 @@
    <br>
    Cost:
    <input id="price" type="number" step=0.01 name="dollars" value=0 disabled></input>
-   <!--
-   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-    <input type="hidden" name="cmd" value="_s-xclick">
-    <input type="hidden" name="hosted_button_id" value="5M35GL4C8LEJ6">
-    <input type="image" src="https://i.imgur.com/nPWH3RK.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-  </form> -->
+   <br>
+   Enter Wallet ID: <input id="wallet" type="text"></input>
 
    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 
     <!-- Identify your business so that you can collect the payments. -->
     <input type="hidden" name="business"
-        value="donations@kcparkfriends.org">
+        value="the3gi@gmail.com">
 
     <!-- Specify a Donate button. -->
     <input type="hidden" name="cmd" value="_donations">
 
     <!-- Specify details about the contribution -->
-    <input type="hidden" name="item_name" value="Friends of the Park">
-    <input type="hidden" name="item_number" value="Fall Cleanup Campaign">
+    <input type="hidden" name="item_name" value="OnionCoin - ShrekFest">
+    <input type="hidden" name="item_number" id="item_number" value=""> <!-- maybe change to wallet -->
+
     <input type="hidden" name="amount" id="amount" value="10">
     <input type="hidden" name="currency_code" value="USD">
 
